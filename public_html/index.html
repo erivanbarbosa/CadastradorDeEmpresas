@@ -1,0 +1,131 @@
+<HTML>
+<HEAD>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</HEAD>
+
+<BODY>    
+    <!-- Painel -->
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+          <h3>Buzzlead</h3>
+      </div>
+    </div>
+    
+    <!-- Corpo do painel -->
+    <div class="panel-body">
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active">Cadastro de Empresas</li>
+        </ol>
+  
+           <form onsubmit="return criar_json(this);"> 
+                
+                <div class="row">
+                    <!-- Empresa -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="pull-left">
+                                <label>Empresa</label>
+                            </div>
+                                <input type="text" class="form-control" name ="empresa" id="empresa" placeholder="Digite o nome da empresa aqui" required>
+                        </div>
+                    </div> 
+                    
+                    <!-- CNPJ -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="pull-left">
+                                <label>CNPJ</label>
+                            </div>
+                                <input type="text" class="form-control" name ="cnpj" id="cnpj" placeholder="Digite o CNPJ da empresa aqui" required>
+                        </div>
+                    </div>
+                    <BR>
+                </div>
+                
+                <!-- Cidade -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="pull-left">
+                                <label>Cidade</label>
+                            </div>
+                                <input type="text" class="form-control" name ="cidade" id="cidade" placeholder="Digite a cidade da empresa aqui" required>
+                        </div>
+                    </div>
+                    
+                    <!-- Estado -->
+                    <div class ="col-md-3">
+                        <div class="form-group">
+                            <div class="pull-left">
+                                <label>Estado</label>
+                            </div>
+                                <select  class="form-control" name ="estado" id="estado"  required>
+                                    <option>Selecione</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espirito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Data de Criacao -->
+                    <div class ="col-md-3">
+                        <div class="form-group">
+                            <div class="pull-left">
+                                <label>Data de Criação</label>
+                            </div>
+                                <input id="data" type="text" class="form-control" name ="criacao"  placeholder="Digite a data de criação da empresa" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endereco -->
+               	<div>
+                    <div class="form-group">
+			<label>Endereço</label>
+                            <div class="col-md-13">
+                                <textarea class="form-control" rows="2" placeholder="Informe o endereço da empresa" name ="endereco" required></textarea>
+                            </div>
+                    </div>
+                </div>
+                
+                <!-- botao enviar -->
+                <div class="pull-right">
+                    <button type="submit" class="btn btn-info">Enviar</button>
+		</div>
+            </form>          
+    </div> <!-- Divisor panel-body -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/criadorJSon.js"></script>
+
+</BODY>
+</HTML>
